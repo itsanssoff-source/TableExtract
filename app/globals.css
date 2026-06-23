@@ -24,3 +24,31 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.preview-container {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.preview-title {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.ocr-image-preview {
+  max-width: 350px;
+  max-height: 250px;
+  object-fit: contain;
+  display: block;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.preview-placeholder {
+  margin: 0;
+  color: #999;
+  font-size: 13px;
+}
