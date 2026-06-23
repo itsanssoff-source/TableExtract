@@ -1,6 +1,8 @@
 /// <reference lib="webworker" />
 
 import { createWorker, PSM } from 'tesseract.js';
+export const runtime = "edge";
+
 
 declare const self: DedicatedWorkerGlobalScope;
 

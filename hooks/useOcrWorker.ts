@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+export const runtime = "edge";
+
 
 const STORAGE_KEY = 'tableextract_last_matrix';
 

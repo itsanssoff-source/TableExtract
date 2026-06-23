@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+export const runtime = "edge";
+
 
 interface TablePreviewProps {
     matrix: string[][];
