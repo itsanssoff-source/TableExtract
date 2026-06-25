@@ -4,8 +4,7 @@ import { useState, useEffect } from 'react';
 import DropZone from '@/components/DropZone';
 import { useOcrWorker } from '@/hooks/useOcrWorker';
 import TablePreview from '@/components/TablePreview';
-export const runtime = "edge";
-
+import { getCloudflareContext } from "@opennextjs/cloudflare";
 export default function Home() {
   const { processImage, isProcessing, resultMatrix, clearSavedMatrix } = useOcrWorker();
 

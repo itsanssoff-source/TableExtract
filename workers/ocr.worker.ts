@@ -1,8 +1,7 @@
 /// <reference lib="webworker" />
 
 import { createWorker, PSM } from 'tesseract.js';
-export const runtime = "edge";
-
+import { getCloudflareContext } from "@opennextjs/cloudflare";
 
 declare const self: DedicatedWorkerGlobalScope;
 

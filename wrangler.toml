@@ -1,0 +1,17 @@
+name = "my-nextjs-app"
+main = ".open-next/worker.js"
+compatibility_date = "2024-12-30"
+compatibility_flags = ["nodejs_compat"]
+
+# --- Your Custom Worker Bindings Go Here ---
+
+# Example: KV Namespace
+[[kv_namespaces]]
+binding = "MY_KV_STORE"
+id = "your-kv-namespace-id-here"
+
+# Example: D1 Database
+[[d1_databases]]
+binding = "MY_DB"
+database_name = "your-db-name"
+database_id = "your-d1-database-id-here"

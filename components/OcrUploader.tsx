@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-export const runtime = "edge";
-
+import { getCloudflareContext } from "@opennextjs/cloudflare";
 
 interface OcrUploaderProps {
   onImageCaptured: (file: Blob) => void;

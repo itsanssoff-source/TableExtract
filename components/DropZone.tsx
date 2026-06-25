@@ -2,8 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { UploadCloud } from 'lucide-react';
-export const runtime = "edge";
-
+import { getCloudflareContext } from "@opennextjs/cloudflare";
 
 interface DropZoneProps {
     onImageCaptured: (blob: Blob) => void;

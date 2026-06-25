@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-export const runtime = "edge";
-
+import { getCloudflareContext } from "@opennextjs/cloudflare";
 
 const STORAGE_KEY = 'tableextract_last_matrix';
 
