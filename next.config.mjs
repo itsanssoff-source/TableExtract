@@ -5,9 +5,10 @@ const nextConfig = {
 
 // Inject OpenNext development bindings wrapper
 if (process.env.NODE_ENV !== "production") {
-  import("@opennextjs/cloudflare").then(({ initOpenNextCloudflareForDev }) => {
-    initOpenNextCloudflareForDev();
-  });
+  const { initOpenNextCloudflareForDev } = await import(
+    "@opennextjs/cloudflare"
+  );
+  initOpenNextCloudflareForDev();
 }
 
 export default nextConfig;
