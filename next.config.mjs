@@ -1,14 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  /* Your existing Next.js config choices */
-};
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 
-// Inject OpenNext development bindings wrapper
-if (process.env.NODE_ENV !== "production") {
-  const { initOpenNextCloudflareForDev } = await import(
-    "@opennextjs/cloudflare"
-  );
+// Initialize local development bindings safely without top-level await
+if (process.env.NODE_ENV === "development") {
   initOpenNextCloudflareForDev();
 }
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  /* Keep any of your existing configuration options here */
+};
 
 export default nextConfig;
