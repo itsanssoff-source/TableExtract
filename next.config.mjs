@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* Keep any of your existing configuration options here */
+  /* Your config options here */
 };
 
-// Use a dynamic import so this package is never bundled during production builds
+// This must be a dynamic import so the production build engine ignores it
 if (process.env.NODE_ENV === "development") {
   import("@opennextjs/cloudflare").then(({ initOpenNextCloudflareForDev }) => {
     initOpenNextCloudflareForDev();
